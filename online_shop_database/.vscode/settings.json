@@ -1,0 +1,35 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "sqlite1",
+            "database": "${workspaceFolder:online_shop_database}/online_shop.db"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "mysql1",
+            "database": "online_shop",
+            "username": "root",
+            "askForPassword": true
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "postgres1",
+            "database": "online_shop",
+            "username": "postgres"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
