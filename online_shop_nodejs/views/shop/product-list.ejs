@@ -14,15 +14,14 @@
         </header>
         <div class="card__image">
             <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzdqpVPBLKi9aOiIut9Apxjq673gJSxCofCw&s"
-            alt="A Book"
+            src="<%= product.imageUrl %>"
+            alt="<%= product.title %>"
             />
         </div>
         <div class="card__content">
-            <h2 class="product__price">$19.99</h2>
+            <h2 class="product__price">$<%= product.price %></h2>
             <p class="product__description">
-            A very interesting book about so many even more interesting
-            thing!
+            <%= product.description %>
             </p>
         </div>
         <div class="card__actions">
